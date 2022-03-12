@@ -21,8 +21,8 @@ public class Ejecucion{//Clase dónde se va a ejecutar el hilo/thread
        CicloFor mifor = new CicloFor();//Creación del objeto de la clase
        Thread hilo = new Thread(new ThreadStart(mifor.run));//Se crea una instancia de la clase Thread
        hilo.Start();//Aqui inicia la ejecución del hilo
-      hilo.Join();//Método join espera a que finalice el hilo antes de terminar el programa
-      Console.WriteLine("Aqui Ya está finalizado el hilo");
+       hilo.Join();//Método join espera a que finalice el hilo antes de terminar el programa
+       Console.WriteLine("Aqui Ya está finalizado el hilo");
    }
  
 }
